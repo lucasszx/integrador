@@ -1,12 +1,12 @@
-package br.com.integrador2krafaelmoraesjoaoscherer.entidades;
+package model;
 
-public enum StatusAtendimento {
-	AGENDADO_PENDENTE("Agendado Pendente"), AGENDADO_CONCLUIDO("Agendado Concluido"),
-	AGENDADO_NAO_CONCLUIDO("Agendado Não Concluido"), AGENDADO_CANCELADO("Agendado Cancelado"), CONCLUIDO("Concluido");
+public enum StatusAgendamento {
+	AGENDAMENTO_PENDENTE("Agendamento Pendente"), AGENDAMENTO_CONCLUIDO("Agendamento Concluido"),
+	AGENDAMENTO_NAO_CONCLUIDO("Agendamento Não Concluido"), AGENDAMENTO_CANCELADO("Agendamento Cancelado"), CONCLUIDO("Agendamento Concluido");
 
 	private String descricao;
 
-	private StatusAtendimento(String descricao) {
+	private StatusAgendamento(String descricao) {
 		this.descricao = descricao;
 	}
 
