@@ -1,0 +1,16 @@
+package br.com.integrador2krafaelmoraesjoaoscherer.entidades;
+
+public enum StatusAtendimento {
+	AGENDADO_PENDENTE("Agendado Pendente"), AGENDADO_CONCLUIDO("Agendado Concluido"),
+	AGENDADO_NAO_CONCLUIDO("Agendado Não Concluido"), AGENDADO_CANCELADO("Agendado Cancelado"), CONCLUIDO("Concluido");
+
+	private String descricao;
+
+	private StatusAtendimento(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+}
