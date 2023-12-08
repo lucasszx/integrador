@@ -1,0 +1,29 @@
+package model;
+
+import java.time.LocalTime;
+
+public class HorarioMonitoria {
+	long idHorarioMonitoria;
+	String sala;
+	LocalTime horaInicio;
+	LocalTime horaFim;
+	String diaSemana;
+    Monitor monitor;
+	Disciplina disciplina;
+
+	public MonitoriaHorario() {
+		super();
+	}
+
+	public MonitoriaHorario(long idHorarioMonitoria, String localizacao,
+			LocalTime horaInicio, LocalTime horaFim, String diaSemana, Monitor monitor, Disciplina disciplina) {
+		super();
+		this.idHorarioMonitoria = idHorarioMonitoria;
+		this.sala = sala;
+		this.horaInicio = horaInicio;
+		this.horaFim = horaFim;
+		this.diaSemana = diaSemana;
+        this.monitor = monitor;
+		this.disciplina = disciplina;
+	}
+}
