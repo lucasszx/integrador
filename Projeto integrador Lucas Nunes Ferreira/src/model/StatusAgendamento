@@ -4,13 +4,13 @@ public enum StatusAgendamento {
 	AGENDAMENTO_PENDENTE("Agendamento Pendente"), AGENDAMENTO_CONCLUIDO("Agendamento Concluido"),
 	AGENDAMENTO_NAO_CONCLUIDO("Agendamento Não Concluido"), AGENDAMENTO_CANCELADO("Agendamento Cancelado"), CONCLUIDO("Agendamento Concluido");
 
-	private String descricao;
+	private String resumo;
 
-	private StatusAgendamento(String descricao) {
-		this.descricao = descricao;
+	private StatusAgendamento(String resumo) {
+		this.resumo = resumo;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getResumo() {
+		return resumo;
 	}
 }
